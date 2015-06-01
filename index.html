@@ -82,6 +82,69 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2015/06/02/在Mac-OS下给python安装模块/" title="在Mac OS下给python安装模块" itemprop="url">在Mac OS下给python安装模块</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Sun Qian" target="_blank" itemprop="author">Sun Qian</a>
+		
+  <p class="article-time">
+    <time datetime="2015-06-01T17:58:50.000Z" itemprop="datePublished"> 发表于 2015-06-02 1:58</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>今天晚上在用python实现粒子群算法的时候要用到numpy模块，奈何这不是系统自带的模块，便需要自己进行安装，折腾了很久，感觉网上不少方法都有问题，最后终于成功。于是自己决定整理一些可行的方法，希望能够帮到下次再遇到这些问题的新手。<br>方法1：通过工具自动化下载安装<br>  easy_install,pip等工具可以自动帮你下载源码，并安装。而且mac系统已经默认集成了这几个工具。<br>  所以直接在终端里输入参数即可：<br>    sudo easy_install numpy<br>  Mac下在命令前加上sudo来获得权限。<br>方法2:下载源码，手动运行setup.py install去安装<br>  找到需要的模块源码，下载下来。往往都是.tar.ge, .zip后缀的压缩包，然后cd进入解压好的文件夹，运行 setup.py 即可。由于mac的下载路径是固定的，所以我们直接cd到下载路径内文件夹然后运行 setup.py<br>    cd /Users/你的用户名/Desktop/模块文件夹名<br>    python setup.py install<br>方法3:直接将文件拷贝到python的库目录<br>  由于mac系统没有分区这一说，直接找很难找到目录。<br>  我们打开finder，然后按    command+shift+G<br>即可，然后输入python的路径/Library/Frameworks/Python.framework/Versions/2.7/lib  然后将安装好的模块文件拷贝进去即去</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术归档/">技术归档</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/python-模块/">python 模块</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/06/02/在Mac-OS下给python安装模块/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/06/02/在Mac-OS下给python安装模块/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2015/05/29/记考试/" title="记考试" itemprop="url">记考试</a>
   </h1>
   <p class="article-author">By
@@ -304,6 +367,10 @@
 			<li><a href="/categories/学习感悟/" title="学习感悟">学习感悟<sup>1</sup></a></li>
 		  
 		
+		  
+			<li><a href="/categories/技术归档/" title="技术归档">技术归档<sup>1</sup></a></li>
+		  
+		
 		</ul>
 </div>
 
@@ -318,11 +385,15 @@
 			
 		
 			
-				<li><a href="/tags/未来-发展/" title="未来 发展">未来 发展<sup>1</sup></a></li>
+				<li><a href="/tags/考试/" title="考试">考试<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/考试/" title="考试">考试<sup>1</sup></a></li>
+				<li><a href="/tags/python-模块/" title="python 模块">python 模块<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/未来-发展/" title="未来 发展">未来 发展<sup>1</sup></a></li>
 			
 		
 		</ul>
