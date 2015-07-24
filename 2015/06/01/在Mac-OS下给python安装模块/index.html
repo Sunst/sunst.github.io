@@ -4,44 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>unbuntu系统安装spark | Denny&#39;s Blog</title>
+    <title>在Mac OS下给python安装模块 | Denny&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Sun Qian">
     
 
     
-    <meta name="description" content="一.安装java环境$ sudo apt-add-repository ppa:webupd8team/java
-$ sudo apt-get update
-$ sudo apt-get install oracle-java7-installer
-检查是否安装成功：
-$ java -version
-成功的话将会显示
-java version &quot;1.7.0_72&quot;_ Java(TM) SE Run">
+    <meta name="description" content="今天晚上在用python实现粒子群算法的时候要用到numpy模块，奈何这不是系统自带的模块，便需要自己进行安装，折腾了很久，感觉网上不少方法都有问题，最后终于成功。于是自己决定整理一些可行的方法，希望能够帮到下次再遇到这些问题的新手。方法1：通过工具自动化下载安装  easy_install,pip等工具可以自动帮你下载源码，并安装。而且mac系统已经默认集成了这几个工具。  所以直接在终端里输入">
 <meta property="og:type" content="article">
-<meta property="og:title" content="unbuntu系统安装spark">
-<meta property="og:url" content="http://geniussq.com/2015/07/14/unbuntu系统安装spark/index.html">
+<meta property="og:title" content="在Mac OS下给python安装模块">
+<meta property="og:url" content="http://geniussq.com/2015/06/01/在Mac-OS下给python安装模块/index.html">
 <meta property="og:site_name" content="Denny's Blog">
-<meta property="og:description" content="一.安装java环境$ sudo apt-add-repository ppa:webupd8team/java
-$ sudo apt-get update
-$ sudo apt-get install oracle-java7-installer
-检查是否安装成功：
-$ java -version
-成功的话将会显示
-java version &quot;1.7.0_72&quot;_ Java(TM) SE Run">
-<meta property="og:image" content="http://ww4.sinaimg.cn/bmiddle/006avwlrjw1eu1nejobslj310k0cewhl.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/bmiddle/006avwlrjw1eu1nonnnv6j30s807yjtk.jpg">
-<meta property="og:image" content="http://ww2.sinaimg.cn/bmiddle/006avwlrjw1eu1noo7vxvj30gq02a3yx.jpg">
-<meta property="og:updated_time" content="2015-07-13T17:36:39.000Z">
+<meta property="og:description" content="今天晚上在用python实现粒子群算法的时候要用到numpy模块，奈何这不是系统自带的模块，便需要自己进行安装，折腾了很久，感觉网上不少方法都有问题，最后终于成功。于是自己决定整理一些可行的方法，希望能够帮到下次再遇到这些问题的新手。方法1：通过工具自动化下载安装  easy_install,pip等工具可以自动帮你下载源码，并安装。而且mac系统已经默认集成了这几个工具。  所以直接在终端里输入">
+<meta property="og:updated_time" content="2015-06-01T19:02:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="unbuntu系统安装spark">
-<meta name="twitter:description" content="一.安装java环境$ sudo apt-add-repository ppa:webupd8team/java
-$ sudo apt-get update
-$ sudo apt-get install oracle-java7-installer
-检查是否安装成功：
-$ java -version
-成功的话将会显示
-java version &quot;1.7.0_72&quot;_ Java(TM) SE Run">
+<meta name="twitter:title" content="在Mac OS下给python安装模块">
+<meta name="twitter:description" content="今天晚上在用python实现粒子群算法的时候要用到numpy模块，奈何这不是系统自带的模块，便需要自己进行安装，折腾了很久，感觉网上不少方法都有问题，最后终于成功。于是自己决定整理一些可行的方法，希望能够帮到下次再遇到这些问题的新手。方法1：通过工具自动化下载安装  easy_install,pip等工具可以自动帮你下载源码，并安装。而且mac系统已经默认集成了这几个工具。  所以直接在终端里输入">
 
     
     <link rel="alternative" href="/atom.xml" title="Denny&#39;s Blog" type="application/atom+xml">
@@ -102,14 +81,14 @@ java version &quot;1.7.0_72&quot;_ Java(TM) SE Run">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/07/14/unbuntu系统安装spark/" title="unbuntu系统安装spark" itemprop="url">unbuntu系统安装spark</a>
+      <a href="/2015/06/01/在Mac-OS下给python安装模块/" title="在Mac OS下给python安装模块" itemprop="url">在Mac OS下给python安装模块</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Sun Qian" target="_blank" itemprop="author">Sun Qian</a>
 		
   <p class="article-time">
-    <time datetime="2015-07-13T17:28:23.000Z" itemprop="datePublished"> 发表于 2015-07-14 1:28</time>
+    <time datetime="2015-06-01T17:58:50.000Z" itemprop="datePublished"> 发表于 2015-06-01 23:28</time>
     
   </p>
 </header>
@@ -118,41 +97,11 @@ java version &quot;1.7.0_72&quot;_ Java(TM) SE Run">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-安装java环境"><span class="toc-number">1.</span> <span class="toc-text">一.安装java环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-安装scala"><span class="toc-number">2.</span> <span class="toc-text">二.安装scala</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-安装git"><span class="toc-number">3.</span> <span class="toc-text">三.安装git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四-最后安装spark"><span class="toc-number">4.</span> <span class="toc-text">四.最后安装spark</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试安装结果"><span class="toc-number">5.</span> <span class="toc-text">测试安装结果</span></a></li></ol>
+			
 		
 		</div>
 		
-		<h1 id="一-安装java环境">一.安装java环境</h1><pre><code>$ sudo apt-<span class="built_in">add</span>-repository <span class="keyword">pp</span><span class="variable">a:webupd8team</span>/java
-$ sudo apt-<span class="built_in">get</span> <span class="keyword">update</span>
-$ sudo apt-<span class="built_in">get</span> install oracle-java7-installer
-</code></pre><p>检查是否安装成功：</p>
-<pre><code>$ java -<span class="property">version</span>
-</code></pre><p>成功的话将会显示</p>
-<pre><code>java version <span class="string">"1.7.0_72"</span>_ Java<span class="list">(<span class="keyword">TM</span>)</span> SE Runtime Environment <span class="list">(<span class="keyword">build</span> <span class="number">1.7</span>.<span class="number">0</span>_72-b14)</span>_ Java HotSpot<span class="list">(<span class="keyword">TM</span>)</span> <span class="number">64</span>-Bit Server VM <span class="list">(<span class="keyword">build</span> <span class="number">24.72</span>-b04, mixed mode)</span>
-</code></pre><h1 id="二-安装scala">二.安装scala</h1><p>从网上下载安装包，可以直接从官网下载或从终端输入下列代码</p>
-<pre><code><span class="variable">$ </span>wget <span class="symbol">http:</span>/<span class="regexp">/www.scala-lang.org/files</span><span class="regexp">/archive/scala</span>-<span class="number">2.11</span>.<span class="number">6</span>.tgz
-<span class="variable">$ </span>sudo tar xvf scala-<span class="number">2.11</span>.<span class="number">6</span>tgz -<span class="constant">C </span>/opt  <span class="comment">#将scala压缩至 /opt/scala-2.11.6</span>
-</code></pre><p>设置环境变量</p>
-<pre><code><span class="variable">$ </span>gedit /etc/profile
-</code></pre><p>在打开的文件最后加上下列代码</p>
-<pre><code><span class="built_in">export</span> SCALA_HOME=/opt/scala-<span class="number">2.11</span>.<span class="number">6</span>
-<span class="built_in">export</span> PATH=<span class="variable">${SCALA_HOME}</span>/bin:<span class="variable">$PATH</span>
-</code></pre><p>检查是否安装成功</p>
-<pre><code>$ <span class="keyword">scala</span> -<span class="keyword">version</span>
-</code></pre><p>成功则会显示</p>
-<pre><code><span class="keyword">Scala</span> code runner <span class="keyword">version</span> 2.11.6 -- <span class="keyword">Copyright</span> 2002-2013, LAMP/EPFL
-</code></pre><h1 id="三-安装git">三.安装git</h1><pre><code>sudo apt-<span class="keyword">get</span> install git
-</code></pre><h1 id="四-最后安装spark">四.最后安装spark</h1><p>我们到官网直接下载已经编译好的spark安装包<br><img src="http://ww4.sinaimg.cn/bmiddle/006avwlrjw1eu1nejobslj310k0cewhl.jpg" alt=""></p>
-<p>将下载好的文件解压</p>
-<pre><code>$ sudo tar xvf spark-<span class="number">1</span>.<span class="number">3</span>.<span class="number">1</span>-<span class="keyword">bin-hadoop2.6.tgz </span>-C /<span class="preprocessor">opt</span>
-</code></pre><p>添加环境变量</p>
-<pre><code><span class="variable">$ </span>gedit /etc/profile
-export <span class="constant">SPARK_HOME</span>=<span class="regexp">/opt/spark</span>-<span class="number">1.3</span>.<span class="number">1</span>-bin-hadoop2.<span class="number">6</span>
-</code></pre><p>之后重启电脑，是/etc/profile永久生效</p>
-<h1 id="测试安装结果">测试安装结果</h1><p>1.打开终端，切换到Spark根目录<br><img src="http://ww1.sinaimg.cn/bmiddle/006avwlrjw1eu1nonnnv6j30s807yjtk.jpg" alt=""></p>
-<p>2.运行测试程序</p>
-<pre><code>$ ./bin/<span class="command">run</span>-example SparkPi <span class="number">10</span>
-</code></pre><p>最后得到正确结果<br><img src="http://ww2.sinaimg.cn/bmiddle/006avwlrjw1eu1noo7vxvj30gq02a3yx.jpg" alt=""></p>
+		<p>今天晚上在用python实现粒子群算法的时候要用到numpy模块，奈何这不是系统自带的模块，便需要自己进行安装，折腾了很久，感觉网上不少方法都有问题，最后终于成功。于是自己决定整理一些可行的方法，希望能够帮到下次再遇到这些问题的新手。<br>方法1：通过工具自动化下载安装<br>  easy_install,pip等工具可以自动帮你下载源码，并安装。而且mac系统已经默认集成了这几个工具。<br>  所以直接在终端里输入参数即可：<br>    <code>sudo easy_install numpy</code><br>  Mac下在命令前加上sudo来获得权限。<br>方法2:下载源码，手动运行setup.py install去安装<br>  找到需要的模块源码，下载下来。往往都是.tar.ge, .zip后缀的压缩包，然后cd进入解压好的文件夹，运行 setup.py 即可。由于mac的下载路径是固定的，所以我们直接cd到下载路径内文件夹然后运行 setup.py<br><code>cd /Users/你的用户名/Desktop/模块文件夹名</code><br><code>python setup.py install</code><br>方法3:直接将文件拷贝到python的库目录<br>  由于mac系统没有分区这一说，直接找很难找到目录。<br>  我们打开finder，然后按    command+shift+G<br>即可，然后输入python的路径/Library/Frameworks/Python.framework/Versions/2.7/lib  然后将安装好的模块文件拷贝进去即去</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -166,7 +115,7 @@ export <span class="constant">SPARK_HOME</span>=<span class="regexp">/opt/spark<
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/ubuntu/">ubuntu</a>
+  <span></span> <a href="/tags/python/">python</a><a href="/tags/模块/">模块</a>
   </div>
 
 </div>
@@ -175,7 +124,7 @@ export <span class="constant">SPARK_HOME</span>=<span class="regexp">/opt/spark<
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://geniussq.com/2015/07/14/unbuntu系统安装spark/" data-title="unbuntu系统安装spark | Denny&#39;s Blog" data-tsina="3671422700" class="share clearfix">
+	  <div data-url="http://geniussq.com/2015/06/01/在Mac-OS下给python安装模块/" data-title="在Mac OS下给python安装模块 | Denny&#39;s Blog" data-tsina="3671422700" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -188,11 +137,19 @@ export <span class="constant">SPARK_HOME</span>=<span class="regexp">/opt/spark<
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2015/07/13/unbuntu系统安装spark/" title="unbuntu系统安装spark">
+  <strong>上一篇：</strong><br/>
+  <span>
+  unbuntu系统安装spark</span>
+</a>
+</div>
+
 
 <div class="next">
-<a href="/2015/06/02/在Mac-OS下给python安装模块/"  title="在Mac OS下给python安装模块">
+<a href="/2015/05/28/记考试/"  title="记考试">
  <strong>下一篇：</strong><br/> 
- <span>在Mac OS下给python安装模块
+ <span>记考试
 </span>
 </a>
 </div>
@@ -201,7 +158,7 @@ export <span class="constant">SPARK_HOME</span>=<span class="regexp">/opt/spark<
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/07/14/unbuntu系统安装spark/" data-title="unbuntu系统安装spark" data-url="http://geniussq.com/2015/07/14/unbuntu系统安装spark/"></div>
+	<div class="ds-thread" data-thread-key="2015/06/01/在Mac-OS下给python安装模块/" data-title="在Mac OS下给python安装模块" data-url="http://geniussq.com/2015/06/01/在Mac-OS下给python安装模块/"></div>
 </section>
 
 
@@ -211,7 +168,7 @@ export <span class="constant">SPARK_HOME</span>=<span class="regexp">/opt/spark<
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-安装java环境"><span class="toc-number">1.</span> <span class="toc-text">一.安装java环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-安装scala"><span class="toc-number">2.</span> <span class="toc-text">二.安装scala</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-安装git"><span class="toc-number">3.</span> <span class="toc-text">三.安装git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四-最后安装spark"><span class="toc-number">4.</span> <span class="toc-text">四.最后安装spark</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试安装结果"><span class="toc-number">5.</span> <span class="toc-text">测试安装结果</span></a></li></ol>
+ 
  
   </div>
 
